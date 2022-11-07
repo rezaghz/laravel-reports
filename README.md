@@ -1,6 +1,6 @@
 # Laravel Reports
 
-Laravel reports package for implementing reports (eg: Spam,Violence,Child Abuse,illegal Drugs, etc) on Eloquent
+Laravel reports package for implementing reports (eg: Spam,Violence,Child Abuse,illegal Drugs, etc.) on Eloquent
 models.
 
 ## Installation
