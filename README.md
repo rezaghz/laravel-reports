@@ -1,4 +1,4 @@
-# Add Reports (eg: Spam,Violence,Child Abuse,illegal Drugs etc) to Eloquent Model
+# Laravel Reports
 
 Laravel reports package for implementing reports (eg: Spam,Violence,Child Abuse,illegal Drugs etc etc) on Eloquent
 models.
