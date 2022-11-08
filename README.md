@@ -1,4 +1,5 @@
 # Laravel Reports
+![laravel-reports](https://user-images.githubusercontent.com/36597017/200645468-274bc278-f0fb-4430-a2f1-ebae4a6fa986.jpg)
 
 Laravel reports package for implementing reports (eg: Spam,Violence,Child Abuse,illegal Drugs, etc.) on Eloquent
 models.
