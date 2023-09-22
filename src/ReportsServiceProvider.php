@@ -1,6 +1,6 @@
 <?php
 
-namespace Rezaghz\Laravel\Reactions;
+namespace Rezaghz\Laravel\Reports;
 
 use Illuminate\Support\ServiceProvider;
 

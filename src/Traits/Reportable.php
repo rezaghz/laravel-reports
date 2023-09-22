@@ -1,11 +1,11 @@
 <?php
 
-namespace Rezaghz\Laravel\Report\Traits;
+namespace Rezaghz\Laravel\Reports\Traits;
 
-use Rezaghz\Laravel\Report\Models\Report;
+use Rezaghz\Laravel\Reports\Models\Report;
 use Illuminate\Database\Eloquent\Builder;
-use Rezaghz\Laravel\Report\Exceptions\InvalidReportUser;
-use Rezaghz\Laravel\Report\Contracts\ReportsInterface;
+use Rezaghz\Laravel\Reports\Exceptions\InvalidReportUser;
+use Rezaghz\Laravel\Reports\Contracts\ReportsInterface;
 
 trait Reportable
 {
