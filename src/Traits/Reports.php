@@ -1,11 +1,11 @@
 <?php
 
-namespace Rezaghz\Laravel\Report\Traits;
+namespace Rezaghz\Laravel\Reports\Traits;
 
-use Rezaghz\Laravel\Report\Contracts\ReportableInterface;
-use Rezaghz\Laravel\Report\Events\OnDeleteReport;
-use Rezaghz\Laravel\Report\Events\OnReport;
-use Rezaghz\Laravel\Report\Models\Report;
+use Rezaghz\Laravel\Reports\Contracts\ReportableInterface;
+use Rezaghz\Laravel\Reports\Events\OnDeleteReport;
+use Rezaghz\Laravel\Reports\Events\OnReport;
+use Rezaghz\Laravel\Reports\Models\Report;
 
 trait Reports
 {

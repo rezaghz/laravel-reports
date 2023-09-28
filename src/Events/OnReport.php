@@ -1,10 +1,10 @@
 <?php
 
-namespace Rezaghz\Laravel\Report\Events;
+namespace Rezaghz\Laravel\Reports\Events;
 
-use Rezaghz\Laravel\Report\Contracts\ReportableInterface;
-use Rezaghz\Laravel\Report\Contracts\ReportsInterface;
-use Rezaghz\Laravel\Report\Models\Report;
+use Rezaghz\Laravel\Reports\Contracts\ReportableInterface;
+use Rezaghz\Laravel\Reports\Contracts\ReportsInterface;
+use Rezaghz\Laravel\Reports\Models\Report;
 
 class OnReport
 {

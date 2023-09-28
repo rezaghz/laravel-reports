@@ -1,6 +1,6 @@
 <?php
 
-namespace Rezaghz\Laravel\Report\Exceptions;
+namespace Rezaghz\Laravel\Reports\Exceptions;
 
 class InvalidReportUser extends \Exception
 {

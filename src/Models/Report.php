@@ -1,6 +1,6 @@
 <?php
 
-namespace Rezaghz\Laravel\Report\Models;
+namespace Rezaghz\Laravel\Reports\Models;
 
 use App\Modules\User\Models\User;
 use Illuminate\Database\Eloquent\Casts\Attribute;
