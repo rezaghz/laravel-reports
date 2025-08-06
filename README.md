@@ -4,6 +4,11 @@
 Laravel reports package for implementing reports (eg: Spam,Violence,Child Abuse,illegal Drugs, etc.) on Eloquent
 models.
 
+## Requirements
+
+- PHP 8.2 or higher
+- Laravel 6.x, 7.x, 8.x, 9.x, 10.x, 11.x, or 12.x
+
 ## Installation
 
 Download package into the project using Composer.
@@ -29,7 +34,7 @@ For Laravel 5.4 or earlier releases version include the service provider within 
 If you want to make changes in migrations, publish them to your application first.
 
 ```bash
-$ php artisan vendor:publish --provider="Rezaghz\Laravel\Reports\ReportsServiceProvider" --tag=migrations
+$ php artisan vendor:publish --provider="Rezaghz\Laravel\Reports\ReportsServiceProvider" --tag=laravel-reports-migrations
 ```
 
 Run database migrations.
@@ -172,10 +177,31 @@ On each report added `\Rezaghz\Laravel\Reports\Events\OnReport` event is fired.
 
 On each report removed `\Rezaghz\Laravel\Reports\Events\OnDeleteReport` event is fired.
 
-### Testing
+## Testing
 
 Run the tests with:
 
 ```bash
+$ composer test
+```
+
+Or run PHPUnit directly:
+
+```bash
 $ vendor/bin/phpunit
 ```
+
+## Changelog
+
+### v2.0.0 (2025-01-08)
+- **BREAKING**: Updated to support Laravel 12.x
+- **BREAKING**: Requires PHP 8.2 or higher
+- Updated migration to use modern Laravel 12 patterns
+- Fixed method naming inconsistencies
+- Improved type hints and return types
+- Updated testing framework compatibility
+
+### v1.0.0 (2023-09-28)
+- Initial release
+- Support for Laravel 6.x - 10.x
+- Basic reporting functionality

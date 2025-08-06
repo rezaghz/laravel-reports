@@ -23,6 +23,7 @@ class ReportsServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        //
     }
 
     /**
@@ -37,7 +38,7 @@ class ReportsServiceProvider extends ServiceProvider
 
             $this->publishes([
                 $migrationsPath => database_path('migrations'),
-            ], 'migrations');
+            ], 'laravel-reports-migrations');
 
             $this->loadMigrationsFrom($migrationsPath);
         }

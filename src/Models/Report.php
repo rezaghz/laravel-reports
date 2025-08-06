@@ -2,11 +2,7 @@
 
 namespace Rezaghz\Laravel\Reports\Models;
 
-use App\Modules\User\Models\User;
-use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Model;
-use Qirolab\Laravel\Reactions\Traits\Reactable;
-use Qirolab\Laravel\Reactions\Contracts\ReactableInterface;
 
 class Report extends Model
 {
@@ -16,6 +12,7 @@ class Report extends Model
      * @var string
      */
     protected $table = 'reports';
+    
     /**
      * The attributes that are mass assignable.
      *
@@ -37,7 +34,7 @@ class Report extends Model
     }
 
     /**
-     * Get the user that reacted on Reportable model.
+     * Get the user that reported on Reportable model.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */

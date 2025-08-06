@@ -70,7 +70,7 @@ trait Reportable
      *
      * @param mixed $reportType
      * @param mixed $user
-     * @return Reports|bool
+     * @return Report|bool
      */
     public function report($reportType, $user = null)
     {
@@ -105,7 +105,7 @@ trait Reportable
      *
      * @param mixed $reportType
      * @param mixed $user
-     * @return void|Reports
+     * @return Report|void
      */
     public function toggleReport($reportType, $user = null)
     {
@@ -120,7 +120,7 @@ trait Reportable
      * Report on reportable model by user.
      *
      * @param mixed $user
-     * @return Reports
+     * @return Report|null
      */
     public function reported($user = null)
     {
@@ -132,7 +132,7 @@ trait Reportable
     /**
      * Report on reportable model by user.
      *
-     * @return Reports
+     * @return Report|null
      */
     public function getReportedAttribute()
     {
@@ -143,6 +143,7 @@ trait Reportable
      * Check is reported by user.
      *
      * @param mixed $user
+     * @param mixed $type
      * @return bool
      */
     public function isReportBy($user = null, $type = null)
@@ -159,7 +160,6 @@ trait Reportable
     /**
      * Check is reported by user.
      *
-     * @param mixed $user
      * @return bool
      */
     public function getIsReportedAttribute()
@@ -208,7 +208,7 @@ trait Reportable
      * @param mixed $user
      * @return ReportsInterface
      *
-     * @throw \Qirolab\Laravel\Reports\Exceptions\InvalidReportUser
+     * @throw \Rezaghz\Laravel\Reports\Exceptions\InvalidReportUser
      */
     private function getUserObj($user = null)
     {

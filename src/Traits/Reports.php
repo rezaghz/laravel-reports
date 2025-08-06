@@ -59,7 +59,7 @@ trait Reports
      *
      * @param ReportableInterface $reportable
      * @param mixed $type
-     * @return void
+     * @return Report|void
      */
     public function toggleReportOn(ReportableInterface $reportable, $type)
     {
@@ -84,9 +84,9 @@ trait Reports
      * Report on reportable model.
      *
      * @param ReportableInterface $reportable
-     * @return Report
+     * @return Report|null
      */
-    public function ReportedOn(ReportableInterface $reportable)
+    public function reportedOn(ReportableInterface $reportable)
     {
         return $reportable->reported($this);
     }
@@ -137,7 +137,7 @@ trait Reports
      *
      * @param Report $report
      * @param ReportableInterface $reportable
-     * @return void
+     * @return bool|null
      */
     protected function deleteReport(Report $report, ReportableInterface $reportable)
     {
